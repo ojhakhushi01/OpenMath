@@ -98,6 +98,13 @@ If you’d like to contribute:
 
 ---
 
+
+## Note
+OpenMath is a **fun and practical side project** built to explore **efficient fine-tuning (QLoRA)** and **math reasoning evaluation** on limited compute.  
+The goal is to learn, experiment, and share reproducible results — while keeping the code clean and open for community improvements.
+
+---
+
 ## License
 This project is licensed under the **Apache License 2.0**.  
 See the [LICENSE](LICENSE) file for details.
