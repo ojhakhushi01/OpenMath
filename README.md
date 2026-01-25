@@ -56,7 +56,8 @@ This project is designed to be reproducible on **free Colab (T4) GPU**.
 | **OpenMath** | 1.5B | **30.0** |
 
 
-<img width="889" height="390" alt="image" src="https://github.com/user-attachments/assets/64078845-d1f0-4748-938a-986161e5b076" />
+<img width="989" height="490" alt="image" src="https://github.com/user-attachments/assets/47875bd3-b32b-4acf-93d7-8b9886ce3b45" />
+
 
 
 ---
