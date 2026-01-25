@@ -29,28 +29,35 @@ This project is designed to be reproducible on **free Colab (T4) GPU**.
 
 ---
 
-## Results (Baseline)
-Training setup:
+## Results
+### Training Setup (Current)
 - Samples: 1000
-- Epochs: 1
-- Max length: 512
-- LoRA rank: 8
+- Epochs: 2
+- Max length: 1024
+- LoRA rank: 16
+- Loss masking: trained mainly on the **solution portion** to improve reasoning
 
-**GSM8K Accuracy:** **14%**  
-(quick baseline run on limited compute)
+### Accuracy
+- **GSM8K Accuracy (100-sample test subset): ~30%**
+
+> Note: The ~30% score was measured on a **100-question subset** of the GSM8K test set for faster evaluation on Colab.
 
 ---
 
 ## GSM8K Leaderboard (Baseline)
+
 | Model | Params | GSM8K Accuracy (%) |
 |------|--------|---------------------|
-| LLaMA 1 | 13B | 10.6 |
-| LLaMA 2 | 7B | 14.6 |
-| Gemma 2B (Base) | 2B | 17.7 |
+| LLaMA 2 | 13B | 28.7 |
+| Gemma 2 (PT) | 2B | 23.9 |
+| Mistral (Base) | 7B | 36.5 |
 | ERNIE 4.5 | 21B | 25.2 |
-| **OpenMath (Qwen2.5-Math-1.5B + LoRA, 1k GSM8K)** | 1.5B | **14.0** |
+| Baichuan (Base) | 13B | 26.6 |
+| **OpenMath** | 1.5B | **30.0** |
 
-<img width="790" height="390" alt="image" src="https://github.com/user-attachments/assets/7b8fe87f-2ab5-4739-ac25-561b835dbe73" />
+
+<img width="889" height="390" alt="image" src="https://github.com/user-attachments/assets/64078845-d1f0-4748-938a-986161e5b076" />
+
 
 ---
 
@@ -64,9 +71,6 @@ This project provides the fine-tuned adapter weights:
 
 > Note: This is **not a full model**.  
 > You must load the **base model** and then attach the adapter.
-
----
-
 
 ---
 
@@ -89,6 +93,7 @@ If you’d like to contribute:
 4. Open a Pull Request
 
 ### Contribution Ideas
+- Run full GSM8K test evaluation (1319 samples) and report results
 - Train on larger GSM8K subsets (3k–5k samples)
 - Add SVAMP / ASDiv datasets for better generalization
 - Improve decoding to reduce repetition
@@ -97,7 +102,6 @@ If you’d like to contribute:
 - Improve evaluation scripts and metrics
 
 ---
-
 
 ## Note
 OpenMath is a **fun and practical side project** built to explore **efficient fine-tuning (QLoRA)** and **math reasoning evaluation** on limited compute.  
