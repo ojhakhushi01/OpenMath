@@ -44,21 +44,27 @@ This project is designed to be reproducible on **free Colab (T4) GPU**.
 
 ---
 
-## GSM8K Leaderboard
+## GSM8K Leaderboard (Baseline)
 
 | Model | Params | GSM8K Accuracy (%) |
 |------|--------|---------------------|
+| LLaMA 2 | 13B | 28.7 |
+| Gemma 2 (PT) | 2B | 23.9 |
 | Mistral (Base) | 7B | 36.5 |
+| ERNIE 4.5 | 21B | 25.2 |
+| Baichuan (Base) | 13B | 26.6 |
 | Gemma | 7B | 46.4 |
 | Zephyr-7b-gemma-v0.1 | 7B | 45.56 |
-| LLaMA 3.2 Instruct | 1B | 39.04 |
+| LLaMA 3.2 Instruct (COT) | 1B | 39.04 |
 | Gemma 3 IT | 1B | 42.15 |
-| Qwen3 (Instruct mode) | 1.7B | 33.66 |
-| **OpenMath** | 1.5B | **41.0** |
+| Qwen 3 (Instruct mode) | 1.7B | 33.66 |
+| **OpenMath (Qwen2.5-Math-1.5B + LoRA)** | 1.5B | **41.0** |
 
 
 
-<img width="989" height="490" alt="image" src="https://github.com/user-attachments/assets/9d42d62f-0b6d-45b0-8f21-57fa808deab6" />
+
+<img width="1090" height="590" alt="image" src="https://github.com/user-attachments/assets/662ea336-8946-4542-b2f2-eb78712d5a2d" />
+
 
 
 
