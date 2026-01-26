@@ -58,7 +58,8 @@ This project is designed to be reproducible on **free Colab (T4) GPU**.
 
 
 
-<img width="989" height="490" alt="image" src="https://github.com/user-attachments/assets/b65bc4f5-ffe7-47bf-9ba9-cfd97637ebf0" />
+<img width="989" height="490" alt="image" src="https://github.com/user-attachments/assets/9d42d62f-0b6d-45b0-8f21-57fa808deab6" />
+
 
 
 
