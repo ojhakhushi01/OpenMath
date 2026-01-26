@@ -55,7 +55,7 @@ This project is designed to be reproducible on **free Colab (T4) GPU**.
 | Baichuan (Base) | 13B | 26.6 |
 | Gemma | 7B | 46.4 |
 | Zephyr-7b-gemma-v0.1 | 7B | 45.56 |
-| LLaMA 3.2 Instruct (COT) | 1B | 39.04 |
+| LLaMA 3.2 Instruct (CoT) | 1B | 39.04 |
 | Gemma 3 IT | 1B | 42.15 |
 | Qwen 3 (Instruct mode) | 1.7B | 33.66 |
 | **OpenMath (Qwen2.5-Math-1.5B + LoRA)** | 1.5B | **41.0** |
