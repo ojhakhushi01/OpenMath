@@ -77,7 +77,6 @@ This project provides the fine-tuned adapter weights:
 
 - `adapter_model.safetensors` → LoRA weights
 - `adapter_config.json` → LoRA configuration
-- Tokenizer + template files for correct formatting
 
 > Note: This is **not a full model**.  
 > You must load the **base model** and then attach the adapter.
