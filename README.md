@@ -32,31 +32,33 @@ This project is designed to be reproducible on **free Colab (T4) GPU**.
 ## Results
 ### Training Setup (Current)
 - Samples: 1000
-- Epochs: 2
+- Epochs: 6
 - Max length: 1024
 - LoRA rank: 16
 - Loss masking: trained mainly on the **solution portion** to improve reasoning
 
 ### Accuracy
-- **GSM8K Accuracy (100-sample test subset): 30%**
+- **GSM8K Accuracy (100-sample test subset): 41%**
 
 > Note: The 30% score was measured on a **100-question subset** of the GSM8K test set for faster evaluation on Colab.
 
 ---
 
-## GSM8K Leaderboard (Baseline)
+## GSM8K Leaderboard
 
 | Model | Params | GSM8K Accuracy (%) |
 |------|--------|---------------------|
-| LLaMA 2 | 13B | 28.7 |
-| Gemma 2 (PT) | 2B | 23.9 |
 | Mistral (Base) | 7B | 36.5 |
-| ERNIE 4.5 | 21B | 25.2 |
-| Baichuan (Base) | 13B | 26.6 |
-| **OpenMath** | 1.5B | **30.0** |
+| Gemma | 7B | 46.4 |
+| Zephyr-7b-gemma-v0.1 | 7B | 45.56 |
+| LLaMA 3.2 Instruct | 1B | 39.04 |
+| Gemma 3 IT | 1B | 42.15 |
+| Qwen3 (Instruct mode) | 1.7B | 33.66 |
+| **OpenMath** | 1.5B | **41.0** |
 
 
-<img width="989" height="490" alt="image" src="https://github.com/user-attachments/assets/47875bd3-b32b-4acf-93d7-8b9886ce3b45" />
+
+<img width="989" height="490" alt="image" src="https://github.com/user-attachments/assets/b65bc4f5-ffe7-47bf-9ba9-cfd97637ebf0" />
 
 
 
